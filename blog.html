@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -6,13 +6,14 @@
     <meta charset="utf-8">
     <title>Blog - Personal Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!--Favicon Start-->
+    <!--Favicon Start-->
 
-        <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
-        <!--Favicon Close-->
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png" />
+    <!--Favicon Close-->
 
     <!-- Template Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
 
     <!-- Template CSS Files -->
@@ -24,7 +25,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- CSS Skin File -->
-    <link href="css/skins/yellowgreen.css" rel="stylesheet">
+    <link href="css/skins/blue.css" rel="stylesheet">
 
     <!-- Live Style Switcher - demo only -->
     <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
@@ -44,290 +45,167 @@
 </head>
 
 <body class="blog">
-<!-- Live Style Switcher Starts - demo only -->
-<div id="switcher" class="">
-    <div class="content-switcher">
-        <h4>STYLE SWITCHER</h4>
-        <ul>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+    <!-- Live Style Switcher Starts - demo only -->
+    <div id="switcher" class="">
+        <div class="content-switcher">
+            <h4>STYLE SWITCHER</h4>
+            <ul>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img
+                            src="img/styleswitcher/purple.png" alt="purple" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img
+                            src="img/styleswitcher/red.png" alt="red" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img
+                            src="img/styleswitcher/blueviolet.png" alt="blueviolet" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img
+                            src="img/styleswitcher/blue.png" alt="blue" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img
+                            src="img/styleswitcher/goldenrod.png" alt="goldenrod" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img
+                            src="img/styleswitcher/magenta.png" alt="magenta" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img
+                            src="img/styleswitcher/yellowgreen.png" alt="yellowgreen" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img
+                            src="img/styleswitcher/orange.png" alt="orange" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img
+                            src="img/styleswitcher/green.png" alt="green" /></a>
+                </li>
+                <li>
+                    <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img
+                            src="img/styleswitcher/yellow.png" alt="yellow" /></a>
+                </li>
+            </ul>
+
+            <div id="hideSwitcher">&times;</div>
+        </div>
+    </div>
+    <!-- <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div> -->
+    <!-- Live Style Switcher Ends - demo only -->
+    <!-- Header Starts -->
+    <header class="header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+            <li class="icon-box">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
             </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            <li class="icon-box">
+                <i class="fa fa-user"></i>
+                <a href="about.html">
+                    <h2>About</h2>
+                </a>
             </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            <li class="icon-box">
+                <i class="fa fa-briefcase"></i>
+                <a href="portfolio.html">
+                    <h2>Portfolio</h2>
+                </a>
             </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            <li class="icon-box">
+                <i class="fa fa-envelope-open"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
             </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            <li class="icon-box active">
+                <i class="fa fa-comments"></i>
+                <a href="blog.html">
+                    <h2>Blog</h2>
+                </a>
             </li>
         </ul>
-
-       <div id="hideSwitcher">&times;</div>
-    </div>
-</div>
-<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-<!-- Live Style Switcher Ends - demo only -->
-<!-- Header Starts -->
-<header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
-    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-        <li class="icon-box">
-            <i class="fa fa-home"></i>
-            <a href="index.html">
-                <h2>Home</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-user"></i>
-            <a href="about.html">
-                <h2>About</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-briefcase"></i>
-            <a href="portfolio.html">
-                <h2>Portfolio</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-envelope-open"></i>
-            <a href="contact.html">
-                <h2>Contact</h2>
-            </a>
-        </li>
-        <li class="icon-box active">
-            <i class="fa fa-comments"></i>
-            <a href="blog.html">
-                <h2>Blog</h2>
-            </a>
-        </li>
-    </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
-    <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="list-unstyled" id="menu">
-                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- Mobile Menu Ends -->
-</header>
-<!-- Header Ends -->
-<!-- Page Title Starts -->
-<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-    <h1>my <span>blog</span></h1>
-    <span class="title-bg">posts</span>
-</section>
-<!-- Page Title Ends -->
-<!-- Main Content Starts -->
-<section class="main-content revealator-slideup revealator-once revealator-delay1">
-    <div class="container">
-        <!-- Articles Starts -->
-        <div class="row">
-            <!-- Article Starts -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                    <div class="post-thumb">
-                        <a href="#" class="d-block position-relative overflow-hidden">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6949411184756277249" height="400" width="400" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <div class="entry-header">
-                            <h3><a href="https://www.linkedin.com/posts/foysal-munsy-769a3b204_webdesign-nftmarketplace-freelancer-activity-6949411185439965184-vE14?utm_source=share&utm_medium=member_desktop">Mt Pirates Website</a></h3>
-                        </div>
-                        <div class="entry-content open-sans-font">
-                            <p>Are you searching for somebody who is making a designing and responsive website with  
-                                <span style="color:#538b01;"> crypto functionality?</span></p>
-                        </div>
-                    </div>
-                </article>
+        <!-- Fixed Navigation Ends -->
+        <!-- Mobile Menu Starts -->
+        <nav role="navigation" class="d-block d-lg-none">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="list-unstyled" id="menu">
+                    <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                    <li class="active"><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                </ul>
             </div>
-            <!-- Article Ends -->
-            <!-- Article Starts -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                    <div class="post-thumb">
-                        <a href="#" class="d-block position-relative overflow-hidden">
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6853339122539593728" height="400" width="400" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                        </a>
-                    </div>
-                    <div class="post-content">
-                        <div class="entry-header">
-                            <h3><a href="https://www.linkedin.com/posts/foysal-munsy-769a3b204_runforlife-marathon-runner-activity-6853339123038736384-833Y?utm_source=share&utm_medium=member_desktop">
-                                Bank of America Chicago Marathon</a></h3>
-                            
+        </nav>
+        <!-- Mobile Menu Ends -->
+    </header>
+    <!-- Header Ends -->
+    <!-- Page Title Starts -->
+    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+        <h1>my <span>blog</span></h1>
+        <span class="title-bg">posts</span>
+    </section>
+    <!-- Page Title Ends -->
+    <!-- Blogger -->
+    <iframe src="https://foysals-cp.blogspot.com/" width="100%" height="90%">
 
-                        </div>
-                        <div class="entry-content open-sans-font">
-                            <p>I Acheived this Bank of America Chicago Marathon certificate
-                                <span style="color:#538b01;">Virtually</span></p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <!-- Article Ends -->
-            <!-- Article Starts -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                <div class="post-thumb">
-                    <a href="#" class="d-block position-relative overflow-hidden">
-                        <!---iframe-->
-                        <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6842876986352893952" height="400" width="400" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        <p>Your browser does not support iFrames.</p>
+    </iframe>
+    <!-- https://run-and-burn.blogspot.com/2021/12/chandpur-half-marathon.html -->
+    <!-- Latest Blog post-->
+    <div id="latest-post"></div>
+    <script src='https://foysals-cp.blogspot.com/feeds/posts/default?alt=json-in-script&callback=latestPost'
+        async='async'></script>
+    <script>
+        function latestPost(json) {
+            var entry = json.feed.entry;
+            for (var i = 0; i < entry.length; i++) {
+                var link, title = entry[i].title.$t;
+                for (var j = 0; j < entry[i].link.length; j++) {
+                    if (entry[i].link[j].rel === "alternate") {
+                        link = entry[i].link[j].href;
+                    }
+                }
+                document.getElementById("latest-post").innerHTML += "<a href='" + link + "'> " + title + "</a> ";
+            }
+            // Add a space after each post
+            document.getElementById("latest-post").innerHTML += "\t";
+        }
 
-
-                </div>
-                <div class="post-content">
-                    <div class="entry-header">
-                        <h3><a href="https://www.linkedin.com/posts/foysal-munsy-769a3b204_upworkfreelancer-webdeveloper-webdesigner-activity-6842876986768150528-pUL5?utm_source=share&utm_medium=member_desktop">
-                            Upwork Freelancer</a></h3>
-
-
-                    </div>
-                    <div class="entry-content open-sans-font">
-                        <p>I just left my Fiverr work already and start my work again in this marketplace in a new way.
-                            <span style="color:#538b01;">Meet with me?</span></p>
-                    </div>
-                </div>
-            </article>
-        </div>
-            <!-- Article Ends -->
-                        <!-- Article Starts -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                    <div class="post-thumb">
-                        <a href="#" class="d-block position-relative overflow-hidden">
-                            <!---iframe-->
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7024766411294081024" height="400" width="400" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+    </script>
+    <!-- blogger ends -->
 
 
-                    </div>
-                    <div class="post-content">
-                        <div class="entry-header">
-                            <h3><a href="https://www.linkedin.com/posts/foysal-munsy-769a3b204_%3F%3F%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F%3F%3F-%3F%3F%3F%3F-%3F-activity-7024766411877097472--rPx?utm_source=share&utm_medium=member_desktop">
-                                Achieved Laptop from Bangladesh Government</a></h3>
-                            
-
-                        </div>
-                        <div class="entry-content open-sans-font">
-                            <p>Finally, I received the most waiting gift from LEDP. 
-                                <span style="color:#538b01;">Learning and earning development project</span></p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <!-- Article Ends -->
-            <!-- Article Starts -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                    <div class="post-thumb">
-                        <a href="#" class="d-block position-relative overflow-hidden">
-                            <!---iframe-->
-                            <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7024770732500942848" height="400" width="400" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
 
 
-                    </div>
-                    <div class="post-content">
-                        <div class="entry-header">
-                            <h3><a href="https://www.linkedin.com/posts/foysal-munsy-769a3b204_as-i-passionate-runner-i-have-done-chandpur-activity-7024770733109116928-sa5n?utm_source=share&utm_medium=member_desktop">
-                                Chandpur Half Marathon</a></h3>
-                            
-
-                        </div>
-                        <div class="entry-content open-sans-font">
-                            <p>When I touch the finish line and got a medal, I feel I can finish every hard moment of my life like this. 
-                                <span style="color:#538b01;">My motivation and spirit it is!</span></p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <!-- Article Ends -->
-
-            <!-- Article Starts -->
-            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
-                <article class="post-container">
-                    <div class="post-thumb">
-                        <a href="#" class="d-block position-relative overflow-hidden">
-                            <!---iframe-->
-                            <a href="https://www.linkedin.com/in/foysal-munsy-769a3b204/" title=""><img src="https://media.licdn.com/dms/image/C5603AQH6yj6jGOe3ug/profile-displayphoto-shrink_800_800/0/1650342271102?e=1680134400&v=beta&t=makJbhYqHtdl8dIfkufxmBaOE7O_3bfreuDBZC16oQc" width="100%" style="max-width: 850px;" alt=""></a><br>Provided by <a href="" target="_blank"></a>
 
 
-                    </div>
-                    <div class="post-content">
-                        <div class="entry-header">
-                            <h3><a href="https://bd.linkedin.com/in/foysal-munsy-769a3b204?trk=profile-badge">
-                                Explore My linkedin Profile</a></h3>
-                            
-
-                        </div>
-                        <div class="entry-content open-sans-font">
-                            <p>You can check my linkedin profile for the latest blog.
-                                <span style="color:#538b01;">Keep eyes on my profile!</span></p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            <!-- Article Ends -->
-            <!-- Pagination Starts -->
-            <div class="col-12 mt-4">
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center mb-0">
-                        <li class="page-item active"><a class="page-link" href="blog.html">1</a></li>
-                        <li class="page-item "><a class="page-link" href="psd to html - 2.html">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- Pagination Ends -->
-        </div>
-        <!-- Articles Ends -->
-    </div>
-   
-</section>
-
-<!-- Template JS Files -->
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/styleswitcher.js"></script>
-<script src="js/preloader.min.js"></script>
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/styleswitcher.js"></script>
+    <script src="js/preloader.min.js"></script>
+    <script src="js/fm.revealator.jquery.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpGridGallery.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 
 </body>
 
