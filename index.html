@@ -25,7 +25,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- CSS Skin File -->
-    <link href="css/skins/yellowgreen.css" rel="stylesheet">
+    <link href="css/skins/blue.css" rel="stylesheet">
 
     <!-- Live Style Switcher - demo only -->
     <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
@@ -164,6 +164,20 @@
                 <a href="about.html" class="btn btn-about">more about me</a>
             </div>
         </div>
+        fetch('https://api.github.com/repos/Foysal-Munsy/Foysal-Munsy/readme')
+  .then(response => response.json())
+  .then(data => {
+    // data.content contains the base64 encoded markdown content of the README
+    const markdown = atob(data.content);
+
+    // Now convert this markdown to HTML. You can use a library like marked.js for this
+    // Include the marked library in your HTML to use it here
+    const html = marked(markdown);
+
+    // Now you can add this HTML to your webpage
+    document.getElementById('readme').innerHTML = html;
+  });
+
     </div>
 </section>
 <!-- Main Content Ends -->
